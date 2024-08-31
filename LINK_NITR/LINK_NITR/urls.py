@@ -17,6 +17,19 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from django.urls import path
+from Users import views
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+     path('register/', views.register, name='register'),
+    path('login/', views.user_login, name='login'),
+    path('student_home/', views.student_home, name='student_home'),  
+    path('',views.home,name='home'),
+    path('alumni_home/', views.alumni_home, name='alumni_home'),
+    path("logout/", views.user_logout, name="logout"), 
+    path("apply/alumni/<int:alumni_id>/", views.apply_to_alumni, name="apply_to_alumni"),
+    path("alumni/notifications/", views.alumni_notifications, name="alumni_notifications"),
+    path('mentor_profile/', views.mentor_profile, name='mentorprofile'),  
+    path('student_profile/',views.student_profile,name='studentprofile')
 ]

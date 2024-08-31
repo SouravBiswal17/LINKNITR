@@ -1,0 +1,116 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:"Poppins","sans-serif";
+}
+body{
+    display:flex;
+    flex-flow:column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* background:black; */
+    background-size: cover;
+    backdrop-filter: blur(10px);
+    opacity: 98%;
+    /* background-image: url("microsoft.jpg");
+    background-size:contain; */
+}
+.wrapper{
+    background:#499e57;
+    color:white;
+    width:420px;
+    height: 550px;
+    border-radius: 10px;
+    padding:30px 40px;
+}
+.wrapper h1{
+    text-align: center;
+}
+.wrapper .input-box{
+    width:100%;
+    height:50px;
+    /* background: salmon; */
+    margin:30px 0;
+    position:relative;
+}
+.input-box input{
+    width:100%;
+    height:100%;
+    background: transparent;
+    border:2px solid white;
+    border-radius: 40px;
+    font-size:16px;
+    padding:20px 45px 20px 20px;
+    color: white;
+}
+.input-box input::placeholder{
+    color:white;
+}
+.input-box i{
+    position:absolute;
+    right:20px;
+    top:50%;
+    transform:translateY(-50%);
+    font-size: 20px;
+}
+.wrapper .remember-forgot{
+    display: flex;
+    justify-content: space-between;
+    font-size:14.5px;
+    margin:-15px 0px 15px;
+}
+.remember-forgot label input{
+    accent-color: white;
+    margin-right:3px;
+}
+.remember-forgot a{
+    color:white;
+    text-decoration:none;
+}
+.remember-forgot a:hover{
+    text-decoration:underline;
+}
+.wrapper .button{
+    width:100%;
+    height:45px;
+    background:white;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px gray; 
+    cursor:pointer;
+    font-size:16px;
+    color:#333;
+    font-weight: 600;
+}
+.wrapper .register-link{
+    font-size:14.5px;
+    margin-top:20px;
+    text-align: center;
+}
+.register-link p a{
+    color:white;
+    text-decoration: none;
+    font-weight: 600;
+}
+.register-link p a:hover{
+    text-decoration: underline;
+}
+.select{
+    font-family: cursive;
+    font-size:18px;
+    background-color: #499e57;
+    border-radius: 15px;
+    color:white;
+    border:2px solid white;
+}
+.success{
+    font-size:20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+    color:white;
+    transform:translateY(-10vh);
+    text-align: center;
+}
