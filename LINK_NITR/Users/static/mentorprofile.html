@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/mentor.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title> student profile</title>
+    <style>
+        *{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        *{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    background-color: #000000;
+}
+.profile-container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+
+}
+.own-photo{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    margin-top: 3vh;
+    margin-left: 3vh;
+}
+.photo1{
+    height: 15vh;
+    width: 13%;
+   background-image: url(souorav.jpg);
+   background-size: cover;
+    border: 4px solid #499e57;
+    margin-left: 4vh;
+    margin-top: 5vh;
+    border-radius: 50%;
+}
+.name-tag1{
+    margin-left: 3vh;
+    font-size: 2rem;
+    margin-top: 7vh;
+}
+.name-tag1 a{
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #499e57;
+    padding-bottom: 4px;
+}
+.photo{
+    height: 9vh;
+    width: 22%;
+    background-image: url(souorav.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    border: 4px solid #499e57;
+}
+.our-logo{
+    height: 100vh;
+    width: 20%;
+    color: #fff;
+    border-right: 2px solid white;
+    font-style: inherit;
+}
+.our-logo h2{
+    margin-top: 6vh;
+    margin-left: 5vh;
+    font-size: 2rem;
+}
+.own-photo p{
+    font-size: 1.2rem;
+    margin-top: 2vh;
+    
+}
+.main-content{
+    height: 100vh;
+    width: 60%;
+    color: #fff;
+    font-size: 1.2rem;
+   
+    
+}
+.department{
+    height: 100vh;
+    width: 20%;
+    
+
+}
+.depa{
+    height: 8vh;
+    width: 70%;
+    text-align: center;
+    background-color: #499e57;
+    margin-top: 15vh;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+.depar{
+    height: 8vh;
+    width: 70%;
+    text-align: center;
+    background-color: #499e57;
+    margin-top: 4vh;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+.department a{
+    height: auto;
+    width: 40%;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+    
+   
+}
+
+.profile-icon{
+    height: 3vh;
+    margin-top: 2vh;
+    margin-left: 5vh;
+    display: flex;
+    font-size: 1.2rem;
+   
+}
+.profile-icon a{
+    margin-left: 2vh;
+    text-decoration: none;
+    color: #fff;
+}
+.profile-info{
+    height: auto;
+    width: 100%;
+    color: #fff;
+    display: flex;
+}
+.logout-btn{
+    height: 5vh;
+    width: 40%;
+    background-color: #499e57;
+    color: #fff;
+    font-weight: 700;
+    margin-top: 50vh;
+    margin-left: 7vh;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+/* main portion */
+.profile-description{
+    height: auto;
+    width:100% ;
+    margin-left: 5vh;
+}
+.profile-about{
+    height: 10vh;
+    width: 100%;
+    color: #fff;
+    margin-top:6vh ;
+    margin-left: 5vh;
+}
+.profile-about p{
+    font-size: 1.5rem;
+    margin-top: 2vh;
+}
+.profile-about ul{
+    font-size: 1.5rem;
+    margin-top: 2vh;
+}
+    </style>
+</head>
+<body>
+    <div class="profile-container">
+        <div class="our-logo">
+            <h2>LINKNITR.</h2>
+            <div class="own-photo">
+                <div class="photo"></div>
+               <div class="name-tag"> 
+                <p>Sourav Biswal <br> @Biswal_sourav</p>               
+            </div>
+            </div>
+            <div class="profile-icon">
+                <i class="fa-solid fa-house"></i>
+                <a href="">Home</a>
+            </div>
+            <div class="profile-icon">
+                <i class="fa-solid fa-business-time"></i>
+                <a href="">Internships</a>
+        </div>
+
+        <div class="profile-icon">
+            <i class="fa-regular fa-envelope"></i>
+            <a href="">Aplication</a>
+    </div>
+        <button class="logout-btn">Logout</button>
+        </div>
+        <div class="main-content">
+            <div class="profile-info">
+            <div class="photo1"></div>
+            <div class="name-tag1"> 
+                <p>Sourav Biswal <br> <a href="#">@Biswal_sourav</a></p>  
+                  
+            </div>
+             </div>
+             <div class="profile-description">
+             <p> Advanced Aplication engeering @Accenture || ICPC Regionalist ,'21 ,'22 || <br>
+            specialist@codeforce(1599)||5<i class="fa-solid fa-star"></i> @codechef(2080)</p>
+            </div>
+            <div class="profile-about">
+                <h2>About</h2>
+                <p>I am a final year undergraduate student fonr National <br> Institute of Technology, Rourkela .I have good knowledge of <br> data structure and algorithms and a keen intrest in 
+                    mathematics and competitive programing. <br> I am actively
+                looking for softwear development opertuninties in india. </p>
+
+                <h4>EXPERIENCE</h4>
+                <p>ACENTURE IN  INDIA || 2yr 4mon</p>
+                <ul>
+                    <p>Accenture in India</p>
+                    <li>Advanced Application Engineer </li>
+                    <li>Oct 2023 to present .11 mos</li>
+                    <li>Mumbai, Maharastra,India .Onsite</li>
+                    <li>Advanced Aplication Engineer</li>
+                    <li>Internship</li>
+                    <li>May 2022 to Oct 2023 .1 yr 6 mos</li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="department">
+            <div class="depa">
+            <a href="#">NITR Biotech <br>Department</a>
+        </div>
+        <div class="depar">
+            <a href="#">Accenture <br>In India</a>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
+[31-08-2024 14:05] : html of mentor profile

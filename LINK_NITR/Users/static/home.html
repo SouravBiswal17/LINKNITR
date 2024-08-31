@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/static/CSS/style.css">
+    <style>
+        *{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'popins',sans-serif;
+    
+
+}
+body{
+    max-height: auto;
+    min-width: 100%;
+    background-color:black;
+    
+}
+nav{
+    position: sticky;
+    width: 100%;
+}
+.popup{
+    
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    z-index: 1000;
+    backdrop-filter: blur(5%);
+ 
+}
+.first-nav{
+    color: white;
+    height: 8vh;
+    width: 100%;
+    display: flex;
+    margin-top: 3vh;
+    margin-left: 10%;
+    
+}
+.first-nav h2{
+    font-size: 2.5rem;
+}
+hr{
+    width: 80%;
+    margin-left: 10%;
+}
+.button{
+    height: 15vh;
+    width: 40vh;
+    margin-left: 51%;
+    
+}
+.btn{
+    height: 4.5vh;
+    width: 15vh;
+    margin-left: 5px;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border: 1px solid black;
+    background-color: #499e57;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.hero-page{
+    height: 75vh;
+    width: 100%;
+    text-align: center;
+    margin-top: 9vh;
+    font-size: 3.8rem;
+    color: #fff;
+    font-weight: 500;
+    overflow: hidden;
+    
+}
+.hero-page img{
+    height: 12vh;
+    width: 12vh;
+    margin-top: 2px;
+    background-color: #499e57;
+    border-radius: 50%;
+}
+.hero-page p{
+    font-size: 1.2rem;
+}
+
+
+/* our information page */
+
+
+.team-member{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    
+}
+.first{
+    height: 50vh;
+    width: 40%;
+    color: #fff;
+    margin-left: 10%;
+    margin-top: 5vh;
+}
+#text{
+    margin-top: 70%;
+}
+.info{
+    height: 50vh;
+    width: 45%;
+    
+}
+.j{
+    margin-top: 3vh;
+    font-size: 1.4rem;
+    height: 15vh;
+    color: #fff;
+}
+.info hr{
+    width: 90%;
+    margin-left: -3px;
+}
+.name{
+    color: #fff;
+    font-size: 0.7rem ;
+    display: flex;
+    
+}
+.name h3{
+    font-size: 1.3rem;
+    margin-left: 5px;
+    color: #499e57;
+}
+
+.photoj {
+    height: 15vh;
+    width: 15vh;
+    margin-left: 70%;
+    margin-top: -45px;
+    border-radius: 50%;
+    background-image: url(jayesh.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.photos{
+    height: 15vh;
+    width: 15vh;
+    margin-left: 70%;
+    margin-top: -45px;
+    border-radius: 50%;
+    background-image: url(souorav.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.photoa{
+    height: 15vh;
+    width: 15vh;
+    margin-left: 70%;
+    margin-top: -45px;
+    border-radius: 50%;
+    background-color: aqua;
+    background-image: url(model-removebg-preview.png);
+    background-position: center;
+    background-size: cover;
+
+}
+.photoy{
+    height: 15vh;
+    width: 15vh;
+    background-color: aqua;
+    margin-left: 70%;
+    margin-top: -45px;
+    border-radius: 50%;
+
+}
+/* student page */
+
+.student{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 10vh;
+}
+.student-info{
+    height: 100vh;
+    width: 15%;
+    background-color: black;
+    border-right:2px solid white ;
+    color: #fff;
+    
+}
+.post{
+    height: 100vh;
+    width: 45%;
+    background-image: url(microsoft.jpg);
+    background-size: cover;
+   
+}
+.search{
+    height: 100vh;
+    width: 25%;
+    background-color: rgb(255, 89, 0);
+}
+
+
+    </style>
+    
+</head>
+<body>
+    <nav>
+        <div class="first-nav">
+            <h2>LINKNITR.</h2>
+            <div class="button">
+                <button class="btn" id="one"><a href="{% url 'login' %}" style="text-decoration: none; color: #fff;">LOG IN</a></button>
+                <button class="btn"><a href="{% url 'register' %}" style="text-decoration: none; color: #fff;">SIGN UP</a></button>
+            </div>
+           
+        </div>
+        <hr>
+    </nav>
+
+    <div class="hero-page">
+        <h2>GET READY F<img src="/static/logo.png" alt="">R YOUR <br> FIRST INTERNSHIP</h2>
+
+        <p>This project is developed by students of NIT Rourkela which helps student 
+            <br> to get their dream job, internship and guidence with there alumnus support.
+        </p>
+    </div>
+    <hr>
+    <!--second page-->
+    <div class="team-member">
+        <div class="first">
+            <p>team member who come <br> up with the idea and develope LINKNITR.</p>
+            <p id="text">Lorem ipsum, dolor sit amet consectetur adipisicing <br>elit. Optio ipsam recusandae, culpa animi <br> ratione eaque nam perferendis <br>mollitia dolores rerum ipsa fugiat  incidunt nemo iusto <br>qui eius fugit veritatis cupiditate!</p>
+        </div>
+
+
+
+
+        <!--our information-->
+        <div class="info"> 
+            <div class="j">
+            <p>Have done the UX/UI  of the website
+            <br>animmation via GSAP</p>
+            <div class="photoj"></div>
+            </div>
+            <div class="name">
+                <h2>Jayesh Verma </h2>
+                <h3>in</h3>
+            </div>
+            <hr>
+            <div class="j">
+                <p>Have done the UX/UI  of the website
+                <br>animmation via GSAP</p>
+                <div class="photos"></div>
+            </div>
+            <div class="name">
+                <h2>Sourav Biswal </h2>
+                <h3>in</h3>
+            </div>
+                <hr>
+                <div class="j">
+                    <p>Have done the UX/UI  of the website
+                    <br>animmation via GSAP</p>
+                    <div class="photoa"></div>
+                </div>
+                <div class="name">
+                    <h2>Akshya Choudhry </h2>
+                    <h3>in</h3>
+                </div>
+            <hr>
+            <div class="j">
+                <p>Have done the UX/UI  of the website
+                <br>animmation via GSAP</p>
+                <div class="photoy"></div>
+            </div>  
+            <div class="name">
+                <h2>Yug Agrawal </h2>
+                <h3>in</h3>
+            </div>
+                
+        </div>
+    </div>
+    <hr>
+    <script src="script.js"></script>
+</body>
+</html>

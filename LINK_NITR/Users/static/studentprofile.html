@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title> student profile</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #000000;
+}
+.profile-container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+
+}
+.own-photo{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    margin-top: 3vh;
+    margin-left: 3vh;
+}
+.photo1{
+    height: 15vh;
+    width: 13%;
+    background-color: blueviolet;
+    margin-left: 4vh;
+    margin-top: 5vh;
+    border-radius: 50%;
+}
+.name-tag1{
+    font-size: 2rem;
+    margin-top: 7vh;
+}
+.name-tag1 a{
+    font-size: 1.5rem;
+}
+.photo{
+    height: 9vh;
+    width: 22%;
+    background-color: blueviolet;
+    border-radius: 50%;
+}
+.our-logo{
+    height: 100vh;
+    width: 20%;
+    color: #fff;
+    border-right: 2px solid white;
+    font-style: inherit;
+}
+.our-logo h2{
+    margin-top: 6vh;
+    margin-left: 5vh;
+    font-size: 2rem;
+}
+.own-photo p{
+    font-size: 1.2rem;
+    margin-top: 2vh;
+    
+}
+.main-content{
+    height: 100vh;
+    width: 60%;
+    color: #fff;
+    font-size: 1.2rem;
+   
+    
+}
+.department{
+    height: 100vh;
+    width: 20%;
+    
+
+}
+.depa{
+    height: 8vh;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #499e57;
+    margin-top: 15vh;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+.depa a{
+    height: auto;
+    width: 100%;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.3rem;
+    margin-left: 4vh;
+    
+   
+}
+
+.profile-icon{
+    height: 3vh;
+    margin-top: 2vh;
+    margin-left: 5vh;
+    display: flex;
+    font-size: 1.2rem;
+   
+}
+.profile-icon p{
+    margin-left: 2vh;
+}
+.profile-info{
+    height: auto;
+    width: 100%;
+    color: #fff;
+    display: flex;
+}
+.logout-btn{
+    height: 5vh;
+    width: 40%;
+    background-color: #499e57;
+    color: #fff;
+    font-weight: 700;
+    margin-top: 50vh;
+    margin-left: 7vh;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+/* main portion */
+.profile-description{
+    height: auto;
+    width:100% ;
+    margin-left: 5vh;
+}
+.profile-about{
+    height: 10vh;
+    width: 100%;
+    color: #fff;
+    margin-top:6vh ;
+    margin-left: 5vh;
+}
+.profile-about h4{
+    margin-top: 5vh;
+}
+
+.profile-about h2{
+    margin-top: 4vh;
+}
+    </style>
+</head>
+<body>
+    <div class="profile-container">
+        <div class="our-logo">
+            <h2>LINKNITR.</h2>
+            <div class="own-photo">
+                <div class="photo"></div>
+               <div class="name-tag"> 
+                <p>Jayesh Verma <br> @jaya_verma</p>               
+            </div>
+            </div>
+            <div class="profile-icon">
+                <i class="fa-solid fa-house"></i>
+                <p>Home</p>
+            </div>
+            <div class="profile-icon">
+                <i class="fa-solid fa-business-time"></i>
+                <p>Internships</p>
+        </div>
+        <button class="logout-btn">Logout</button>
+        </div>
+        <div class="main-content">
+            <div class="profile-info">
+            <div class="photo1"></div>
+            <div class="name-tag1"> 
+                <p>Jayesh Verma <br> <a href="#">@jaya_verma</a></p>  
+                  
+            </div>
+             </div>
+             <div class="profile-description">
+             <p> NIT Rourkela 2027,Frontend Developer,Coding/Development <br>Enthusiast,aspiring engineer seeking an Internship</p>
+            </div>
+            <div class="profile-about">
+                <h2>About</h2>
+                <h4>SKILLS</h4>
+                <p>I have completed frontend development.</p>
+
+                <h4>PROJECT</h4>
+                <p>3D Profile using Js,gssp,locomotive and canvas frame</p>
+
+                <h4>EDUCATION</h4>
+                <p>NITR 2027</p>
+                <p>12th 10th from Jawahar Navodaya Vidyalaya </p>
+
+                <h4>Hobies</h4>
+                <p>Football ,Gyming ,Guitar etc <br> Have a deep diverse to explore the world</p>
+
+                <h2>INTERNSHIPS</h2>
+                <p>Not done yet</p>
+            </div>
+        </div>
+        <div class="department">
+            <div class="depa">
+            <a href="#">Check C.V. score</a>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
